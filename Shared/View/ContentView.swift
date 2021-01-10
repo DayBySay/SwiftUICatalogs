@@ -11,7 +11,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-               NavigationLink("マップ", destination: MapView())
+                NavigationLink("Map", destination: MapView())
+                NavigationLink("ScrollViewReader", destination: ScrollViewReaderView())
             }.navigationTitle("UI Catalogs")
         }
     }

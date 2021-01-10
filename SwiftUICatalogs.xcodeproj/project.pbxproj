@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		50A4F4AC25AADCF000CD1876 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A4F4AB25AADCF000CD1876 /* MapView.swift */; };
 		50A4F4AD25AADCF000CD1876 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A4F4AB25AADCF000CD1876 /* MapView.swift */; };
+		50A4F4BA25AAE30000CD1876 /* ScrollViewReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A4F4B925AAE30000CD1876 /* ScrollViewReaderView.swift */; };
+		50A4F4BB25AAE30000CD1876 /* ScrollViewReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A4F4B925AAE30000CD1876 /* ScrollViewReaderView.swift */; };
 		50F11A1525AADBBE00814D73 /* SwiftUICatalogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F11A0225AADBBD00814D73 /* SwiftUICatalogsApp.swift */; };
 		50F11A1625AADBBE00814D73 /* SwiftUICatalogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F11A0225AADBBD00814D73 /* SwiftUICatalogsApp.swift */; };
 		50F11A1725AADBBE00814D73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F11A0325AADBBD00814D73 /* ContentView.swift */; };
@@ -19,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		50A4F4AB25AADCF000CD1876 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		50A4F4B925AAE30000CD1876 /* ScrollViewReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReaderView.swift; sourceTree = "<group>"; };
 		50F11A0225AADBBD00814D73 /* SwiftUICatalogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICatalogsApp.swift; sourceTree = "<group>"; };
 		50F11A0325AADBBD00814D73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		50F11A0425AADBBE00814D73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 			children = (
 				50F11A0325AADBBD00814D73 /* ContentView.swift */,
 				50A4F4AB25AADCF000CD1876 /* MapView.swift */,
+				50A4F4B925AAE30000CD1876 /* ScrollViewReaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F11A1725AADBBE00814D73 /* ContentView.swift in Sources */,
+				50A4F4BA25AAE30000CD1876 /* ScrollViewReaderView.swift in Sources */,
 				50A4F4AC25AADCF000CD1876 /* MapView.swift in Sources */,
 				50F11A1525AADBBE00814D73 /* SwiftUICatalogsApp.swift in Sources */,
 			);
@@ -218,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F11A1825AADBBE00814D73 /* ContentView.swift in Sources */,
+				50A4F4BB25AAE30000CD1876 /* ScrollViewReaderView.swift in Sources */,
 				50A4F4AD25AADCF000CD1876 /* MapView.swift in Sources */,
 				50F11A1625AADBBE00814D73 /* SwiftUICatalogsApp.swift in Sources */,
 			);
