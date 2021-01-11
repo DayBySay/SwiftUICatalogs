@@ -10,7 +10,7 @@ import MapKit
 
 struct MapView: View {
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 37.33501993272811, longitude: -122.00912876460102),
-                                             latitudinalMeters: 100000, longitudinalMeters: 10000)
+                                             latitudinalMeters: 30000, longitudinalMeters: 30000)
     private var pins: [Pin] = [
         Pin(name: "Apple Park",
             coordinate: CLLocationCoordinate2D(latitude: 37.33501993272811,
@@ -26,7 +26,7 @@ struct MapView: View {
         Map(coordinateRegion: $region,
             annotationItems: pins,
             annotationContent: { (pin) in
-                MapAnnotation(coordinate: pin.coordinate, anchorPoint: CGPoint(x: 0.5, y: 0.7)) {
+                MapAnnotation(coordinate: pin.coordinate) {
                     VStack {
                         Text(pin.name)
                         Image(systemName: "mappin.circle.fill")
