@@ -11,7 +11,7 @@ import MapKit
 struct MapView: View {
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 37.33501993272811, longitude: -122.00912876460102),
                                              latitudinalMeters: 30000, longitudinalMeters: 30000)
-    private var pins: [Pin] = [
+    @State private var pins: [Pin] = [
         Pin(name: "Apple Park",
             coordinate: CLLocationCoordinate2D(latitude: 37.33501993272811,
                                                longitude: -122.00912876460102)),
@@ -22,6 +22,7 @@ struct MapView: View {
             coordinate: CLLocationCoordinate2D(latitude:37.48493581456912,
                                                longitude: -122.14960893718997)),
     ]
+    
     var body: some View {
         Map(coordinateRegion: $region,
             annotationItems: pins,
@@ -30,7 +31,13 @@ struct MapView: View {
                     VStack {
                         Text(pin.name)
                         Image(systemName: "mappin.circle.fill")
-                            .foregroundColor(.red)
+                            .foregroundColor( pin.selected ? .red : .blue)
+                            .onTapGesture {
+                                print(pin)
+                                if let idx = pins.firstIndex(where: { $0.id == pin.id }) {
+                                    pins[idx].selected.toggle()
+                                }
+                            }
                     }
                 }
             })
@@ -42,6 +49,7 @@ struct Pin: Identifiable {
     let id = UUID()
     let name: String
     let coordinate: CLLocationCoordinate2D
+    var selected: Bool = false
 }
 
 struct MapView_Previews: PreviewProvider {
